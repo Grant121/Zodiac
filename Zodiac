@@ -1,0 +1,169 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+Console.WriteLine("Enter a month with a Capital letter");
+        string Month = Console.ReadLine();
+        
+        Console.WriteLine("Enter day (number)");
+      
+        int Day = Convert.ToInt32(Console.ReadLine());
+        
+			
+			// { is opening a box and another { would put a box inside of a box, but we have to close the second box first } and then the first }
+			
+			
+        if (Month == "March") { // opens a  big box
+            if (Day <= 20) 
+			{ // opens another small box and puts a statement in the box
+                Console.WriteLine("Pisces");
+            } // closes that box with the statement 
+            else if (Day >= 21) 
+			{ // opens another small box beside the box we just close and puts another statement in the box weve just opened
+                Console.WriteLine("Aries");
+            }// closes that box with the statement
+        }// closes the overall big box
+	
+        else if (Month == "April") 
+		{
+            if (Day <= 19)
+			{
+                Console.WriteLine("Aries");
+            }
+            else if (Day >= 20) 
+			{
+                Console.WriteLine("Taurus");
+            }
+        }
+		
+        else if (Month == "May") 
+		{
+            if (Day <= 20) 
+			{
+                Console.WriteLine("Taurus");
+            }
+            else if (Day >= 21) 
+			{
+                Console.WriteLine("Gemini");
+            }
+        }
+		
+        else if (Month == "June") 
+		{
+            if (Day <= 20) 
+			{
+                Console.WriteLine("Gemini");
+            }
+            else if (Day >= 21) 
+			{
+                Console.WriteLine("Cancer");
+            }
+        }
+		
+        else if (Month == "July") 
+		{
+            if (Day <= 22) 
+			{
+                Console.WriteLine("Cancer");
+            }
+            else if (Day >= 23) 
+			{
+                Console.WriteLine("Leo");
+            }
+        }
+		
+        else if (Month == "August") 
+		{
+            if (Day <= 22) 
+			{
+                Console.WriteLine("Leo");
+            }
+            else if (Day >= 23) 
+			{
+                Console.WriteLine("Virgo");
+            }
+        }
+				
+        else if (Month == "September") 
+		{
+            if (Day <= 22) 
+			{
+                Console.WriteLine("Virgo");
+            }
+            else if (Day >= 23) 
+			{
+                Console.WriteLine("Libra");
+            }
+        }
+			
+        else if (Month == "October") 
+		{
+            if (Day <= 22) 
+			{
+                Console.WriteLine("Libra");
+            }
+            else if (Day >= 23) 
+			{
+                Console.WriteLine("Scorpio");
+            }
+        }
+			
+        else if (Month == "November") 
+		{
+            if (Day <= 21) 
+			{
+                Console.WriteLine("Scorpio");
+            }
+            else if (Day >= 22) 
+			{
+                Console.WriteLine("Sagittarius");
+            }
+        }
+			
+        else if (Month == "December") 
+		{
+            if (Day <= 21) 
+			{
+                Console.WriteLine("Sagittarius");
+            }
+            else if (Day >= 22) 
+			{
+                Console.WriteLine("Capricorn");
+            }
+        }
+		
+        else if (Month == "January") 
+		{
+            if (Day <= 19) 
+			{
+                Console.WriteLine("Capricorn");
+            }
+            else if (Day >= 20) 
+			{
+                Console.WriteLine("Aquarius");
+            }
+        }
+		
+        else if (Month == "Febuary") 
+		{
+            if (Day <= 18) 
+			{
+                Console.WriteLine("Aquarius");
+            }
+            else if (Day >= 20) 
+			{
+                Console.WriteLine("Pisces");
+			}	
+		}
+			
+			else {
+			Console.WriteLine("Start over and put correct inputs.");
+			return;	//if its put in wrong, that will end the program and tell us to input it properly.
+			}
+			
+			Console.WriteLine("Thanks for doing my Project");
+		}
+	}
+
